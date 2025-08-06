@@ -16,17 +16,4 @@ export const zUser = z.object({
   number: z.string(),
 });
 
-export const zstatus = z.enum([
-  Status.COMPLETED,
-  Status.IN_PROGRESS,
-  Status.NOT_INTERESTED,
-] as const);
-
-export const zTodo = z.object({
-  title: z.string(),
-  description: z.string().optional(),
-  status: zstatus,
-});
-
-export type Todo = z.infer<typeof zTodo>;
 export type User = z.infer<typeof zUser>;
