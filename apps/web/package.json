@@ -4,16 +4,24 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3000",
+    "dev": "next dev --turbopack --port 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@repo/trpc": "workspace:*",
+    "@repo/shared": "workspace:*",
+    "@tanstack/react-query": "^5.84.1",
+    "@trpc/client": "^11.4.4",
+    "@trpc/next": "^11.4.4",
+    "@trpc/react-query": "^11.4.4",
+    "@trpc/server": "^11.4.4",
     "next": "^15.4.2",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "zod": "^4.0.15"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
