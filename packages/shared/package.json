@@ -1,0 +1,14 @@
+{
+  "name": "@repo/shared",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch  --preserveWatchOutput",
+    "start": "tsc -b && node dist/index.js"
+  },
+  "peerDependencies": {
+    "zod": "4.0.15"
+  }
+}
